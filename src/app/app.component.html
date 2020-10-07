@@ -7,6 +7,15 @@
         id="filter-status"
         [(ngModel)]="filteredStatus"
       />
+      <br />
+
+      <button
+        type="submit"
+        (click)="onAddServer()"
+        class="btn btn-primary mb-3"
+      >
+        Add Server
+      </button>
       <ul class="list-group">
         <li
           class="list-group-item"
