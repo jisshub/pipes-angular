@@ -12,7 +12,7 @@ export class AppComponent {
       resolve("stable");
     }, 2000);
   });
-  nameToSort: string = "server";
+  nameToRev: string = "server";
   filteredStatus = "";
 
   servers = [

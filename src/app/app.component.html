@@ -18,14 +18,14 @@
       </button>
       <br />
       <h1 class="display-5">App Status: {{ appStatus | async }}</h1>
-      <h1 class="display-4">name: {{ nameToSort | reverse }}</h1>
+      <h1 class="display-4">name: {{ nameToRev | reverse }}</h1>
       <ul class="list-group">
         <li
           class="list-group-item"
           *ngFor="
             let server of servers
-              | sort: 'name'
               | filter: filteredStatus:'status'
+              | sort: 'name'
           "
           [ngClass]="getStatusClasses(server)"
         >
